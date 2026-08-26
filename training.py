@@ -7,10 +7,12 @@ prices = []
 with open("data.csv", 'r') as file:
     csvreader = csv.reader(file)
 
+    next(csvreader)
     for row in csvreader:
-        if i == 0:
-            mileages.append(float(row[i]))
-        else:
-            prices.append(float(row[i]))
+        mileages.append(float(row[0]))
+        prices.append(float(row[1]))
     for i in mileages:
-        print (mileages[i])
+        print (i)
+    for i in prices:
+        print (i)
+
