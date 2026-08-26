@@ -1,4 +1,4 @@
-# ft_linear_regression 🚗
+# ft_linear_regression 
 
 ## Description
 Ce projet est une introduction aux concepts de base du Machine Learning. Il consiste à implémenter un algorithme de régression linéaire simple (à une seule caractéristique) pour prédire le prix d'une voiture en fonction de son kilométrage, en utilisant la méthode de la descente de gradient.
@@ -10,7 +10,7 @@ Le projet est divisé en deux programmes distincts :
 
 ## Installation et Utilisation
 1. Cloner le dépôt :
-   `git clone [URL_DE_TON_REPO]`
+   `git clone [url du depot]`
 2. Lancer le programme d'entraînement :
    `python3 train.py`
 3. Lancer le programme de prédiction :
