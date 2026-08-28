@@ -1,5 +1,6 @@
 
 import csv
+import matplotlib.pyplot as plt
 
 mileages = []
 prices = []
@@ -30,7 +31,14 @@ for i in range(iterations):
 with open("thetas.csv", 'w') as fichier:
     fichier.write(str(theta0) + "," + str(theta1))
 
-
+plt.scatter(mileages, prices)
+prix_estimes = []
+for i in range(len(mileages)):
+    prix_estimes.append(estimatePrice(mileages[i]))
+plt.scatter(mileages, prix_estimes)
+plt.plot(mileages, prices, color='red')
+plt.plot(mileages, prix_estimes, color='blue')
+plt.show()
 #print(theta0)
 #print(theta1)
 #for i in mileages:
